@@ -1,0 +1,29 @@
+@import "./breakpoints.scss";
+@import "./mixins.scss";
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-color: yellow;
+  @include respond-above("sm") {
+    background-color: green;
+  }
+  @include respond-above("md") {
+    background-color: red;
+  }
+  @include respond-above("lg") {
+    background-color: rosybrown;
+  }
+  @include respond-above("xl") {
+    background-color: royalblue;
+  }
+
+  div {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
